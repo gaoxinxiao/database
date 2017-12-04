@@ -1,0 +1,77 @@
+浮动属性：脱离文档流的属性，不占位
+
+	float:none;默认值
+	float:left;元素从左向右浮
+	float:right;元素从右向左浮
+
+父盒子下的子元素加了浮动属性后，父盒子没有高度。原因：浮动属性是脱离文档流的属性，不占位
+
+浮动的作用：1、让元素并行显示	
+	    2、可以改变元素的位置
+	    3、将行内元素转化为行内块元素；既支持宽高又同行显示；相当于display:inline-block;
+	    4、让元素宽度自适应
+	    5、可以解决首个盒子margin-top失效问题：1、给子元素设置浮动属性
+					          2、给父盒子加边框，设置隐形边框border: 1px solid transparent;
+						 3、给父盒子加padding-top值，父盒子高度-padding-top值
+
+clear:left;
+clear:right;
+clear:both;
+clear:none;(默认值)
+
+由于浮动不占位，所以在新盒子开始之前应该先清除上面的浮动影响。（闭合浮动元素）
+
+
+
+清除浮动方法：1、给受浮动影响的盒子加clear:both;
+	      2、给浮动元素的父盒子加height，不建议使用
+	      3、给父盒子加overflow:hidden;
+	      4、空标签清除浮动  <div class="clear"></div>
+	      5、给父元素添加伪元素去清除浮动
+
+
+css3新增伪类元素：
+在元素之前插入伪标签
+
+a:before{
+	content: "你";
+}
+在元素之后插入伪标签
+a:after{
+	content: "他";
+}
+
+注意：伪元素只能给双标签使用；伪元素默认是行内元素
+
+三角形的写法：width:0;height:0;border: 20px solid transparent; border-top-color: #f00;（朝下三角形）填充色与三角形方向相反。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

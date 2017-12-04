@@ -1,0 +1,89 @@
+1、文字属性：
+	color:字体颜色
+
+	font-size:字体大小
+
+	font-weight:bold;=font-weight:900;字体加粗
+	font-weight: bolder;
+	font-weight:normal;=font-weight:400;不加粗
+
+	font-family: "黑体","宋体","微软雅黑";字体类型  属性值之间用逗号分隔，有多个属性值时优先选择第一个
+
+2、段落属性：
+	文本修饰：text-decoration:underline;下划线
+		  text-decoration:overline;上划线
+		  text-decoration:line-through;删除线
+		  text-decoration:none；隐藏
+
+	文本对齐方式：text-align:left/center/right;注意行内元素实现水平居中时，1、float转化 2、设置宽度
+
+	文本首行缩进：text-indent: 36px;em、百分比、负值
+
+	行间距/行高：line-height:36px;em、百分比、负值(不允许使用)
+
+
+隐藏属性：
+	display:none;整体隐藏  不占位
+	display: block;显示
+
+	visibility: hidden;整体隐藏，占位
+	visibility:visible;显示；默认值
+	visibility:collapse;合并空间
+
+	overflow: hidden;溢出隐藏，将容器之外多余的部分隐藏
+	overflow: visible;溢出显示
+	overflow: auto;根据内容多少判断是否出现滚动条
+	overflow: scroll;强制显示滚动条
+	
+	overflow-x:hidden;隐藏x轴滚动条
+	overflow-x:scroll;强制给x轴添加滚动条
+	
+	opacity:0.0 整体
+	filter:alpha(opacity=00)
+	
+	text-indent:-99999px;内容
+
+	position：left/top/bottom/right:-99999px;整体
+
+
+----单行文本的省略号显示：width+overflow+nowrap+text-overflow
+----tab标签切换效果
+----焦点图、轮播图
+
+
+
+letter-spacing:4px;设置文字之间的间距
+
+word-spacing：4px；设置英文单词的间距  margin left
+
+
+滚动标签：<marquee behavior="alternate" direction="left" scrollamount="100"></marquee>
+
+behavior:滚动行为  scroll无限循环滚动  slide只滚一次  alternate来回滚动
+
+direction：滚动方向 up right down left 
+
+scrollamount：滚动速度
+
+loop="-1"滚动次数
+
+onmouseover="this.stop()"鼠标划过时停止滚动
+
+onmouseout="this.start()"鼠标离开时开始滚动
+
+height=""
+width=""
+
+
+
+
+
+
+
+
+
+
+
+
+
+

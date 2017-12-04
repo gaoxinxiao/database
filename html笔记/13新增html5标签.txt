@@ -1,0 +1,21 @@
+新增主体元素：
+1、<section>对页面进行划分区块、划分段；由内容和标题组成;与div不等同</section>
+2、<article>强调独立性，一篇文章、博客、论坛帖子；页面里独立的内容模块</article>
+3、<nav>页面中的导航链接组；传统导航条，侧边栏导航，翻页导航</nav>
+4、<aside>侧边栏，对页面内容做解释说明</aside>
+5、<time datetime="2016-11-15T16:05">设置日期、时间</time>
+
+<!-- 新增非主体 -->
+1、<header>有引导作用；整个页面开始或页面内容开始的标题；可以使用多次</header>
+2、<footer>脚注；联系信息，版权信息</footer>
+3、<address>作者名字，电话号码，电子邮箱，网址等；放在footer里使用；可以使用多次</address>
+4、<hgroup>将大标题和小标题进行分组</hgroup>
+5、<main>页面主体内容;只能使用一次</main>
+
+新增媒体标签：
+
+音频： <audio src="../images/Adele - Send My Love (To Your New Lover).m4a" controls="controls" loop="-1" autoplay="autoplay"></audio>
+
+视频：<video src="../images/01.mp4" controls="controls" width="200" height="200"></video>
+
+画布：<canvas>

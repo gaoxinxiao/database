@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding:0;}
+ 		.box{
+ 			width:133px;
+ 			height: 200px;
+ 			border:1px solid #ccc;
+ 			float: left;
+ 			margin-right:20px;
+ 	  		transition: all  1s linear;	
+ 	  		position: relative;
+ 	  		overflow:hidden;
+ 		}
+ 		.box div{
+ 			width: 133px;
+ 			height: 200px;
+ 			background: rgba(0,0,0,0.5);
+ 			position: absolute;
+ 			left:0;
+ 			top:200px;
+ 			transition:all ease 2s;
+ 			text-align: center;
+ 			line-height: 200px;
+ 			color:#fff;
+ 			font-size: 40px;
+ 		}
+		.box:hover div{
+			transform: translateY(-200px);
+		}
+ 	
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="img/1.jpg" alt="">
+		<div>广告1</div>
+	</div>
+	<div class="box">
+		<img src="img/2.jpg" alt="">
+		<div>广告2</div>
+	</div>
+	<div class="box">
+		<img src="img/3.jpg" alt="">
+		<div>广告3</div>
+	</div>
+	<div class="box">
+		<img src="img/4.jpg" alt="">
+		<div>广告4</div>
+	</div>
+	<div class="box">
+		<img src="img/5.jpg" alt="">
+		<div>广告5</div>
+	</div>
+
+
+
+
+
+</body>
+</html>

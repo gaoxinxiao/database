@@ -1,0 +1,113 @@
+定位：
+
+1、position：static;静态定位
+
+2、position:absolute;绝对定位
+
+一、默认状态：绝对定位默认相对于浏览器body窗口去定位；是脱离文档流的属性，不占位
+
+当加了定位属性后通过top、right、bottom、left可以进行元素位移。
+
+二、绝对定位相对于有定位属性的父级元素去定位
+
+绝对定位的特点：1、不占位
+	       2、位置默认在左上角
+	       3、子元素会自动重叠，且最后的元素显示在最上层；可以通过z-index值改变元素的显示顺序；z-index值越大优先级越高，元素越优先显示
+
+
+3、position:relative;相对定位：相对于自身原来位置去定位；占位
+相对定位的特点：1、占位
+	 	2、不会自动重叠，可以通过top、right、bottom、left方向值实现重叠
+
+
+
+
+4、position:fixed;固定定位：相对于浏览器窗口去定位；固定在某个位置不动
+用途：遮罩层，工具侧栏等
+	
+
+
+
+
+
+
+
+
+总结：
+相对定位与绝对定位的区别：1、参照物：绝对定位1、参照body  2、参照有定位属性的父级
+				    相对定位：参照自身
+			 2、占位：绝对定位不占位
+				  相对定位占位
+			 3、层叠：绝对定位自动重叠
+				  相对定位不会自动重叠，可以通过top、right、bottom、left方向值实现重叠
+
+
+透明属性：
+
+全透明属性：内容和背景色都透明
+opacity：0.5；滤镜透明  取值范围：0~1  0是完全透明，1是不透明
+
+opacity:.3;/*支持主流浏览器*/
+filter:alpha(opacity=30);/*支持ie低版本浏览器*/
+
+
+只透明背景色：background: rgba(0,0,0,.5);  子元素不会继承父元素的透明效果
+
+定位的案例：1、固定尺寸的盒子如何水平垂直都居中？
+	position: absolute;
+	left: 50%;
+	top:50%;
+	margin-left: -297px;  -盒子宽度的一半
+	margin-top: -257px;   -盒子高度的一半
+
+	2、遮罩层？如何关闭遮罩层？
+	html,body{
+	width: 100%;
+	height: 100%;
+	}
+	.fixed{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position:fixed;
+	left: 0;
+	top:0;
+	}
+	关闭遮罩层：通过活动的锚点链接去关闭
+	<div class="fixed" id="close">
+			<a href="#close">&times;</a>
+	</div>
+	
+	#close:target{
+	display: none;
+	}
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

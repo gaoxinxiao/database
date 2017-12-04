@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding:0;}
+		.box{
+			width: 200px;height: 200px;margin:100px auto;position: relative;
+			transform-style:preserve-3d;transform: perspective(800px) rotateY(0deg) rotateX(0deg);transition:all 4s linear;
+		
+		}
+		.box div{
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			left:0;
+			top:0;
+			text-align: center;
+			line-height: 200px;
+			font-size: 60px;
+			
+		}
+		.box div:nth-child(1){
+			transform: translateZ(100px);background: #09f;
+		}
+		.box div:nth-child(2){
+			transform: translateZ(-100px) rotateY(180deg);background: #0f9;
+		}
+		.box div:nth-child(3){
+			transform: translateX(-100px) rotateY(-90deg);background: #9f0;
+		}
+		.box div:nth-child(4){
+			transform: translateX(100px) rotateY(90deg);background: #90f;
+		}
+		.box div:nth-child(5){
+			transform: translateY(-100px) rotateX(90deg);background: #f90;
+		}
+		.box div:nth-child(6){
+			transform: translateY(100px) rotateX(-90deg);background: #f09;
+		}
+
+		.box:hover{
+			transform: perspective(800px) rotateY(360deg) rotateX(360deg);
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div>前面</div>
+		<div>后面</div>
+		<div>左面</div>
+		<div>右面</div>
+		<div>上面</div>
+		<div>下面</div>
+	</div>
+</body>
+</html>

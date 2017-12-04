@@ -1,0 +1,32 @@
+新增主体元素：	
+       1、<section>
+		用来划分网页区块的，将标题和内容包含起来；强调分块、分段
+	</section>
+	2、<article>
+		强调独立性，包含一篇文章、博客、论坛。
+	</article>
+	3、<aside>
+		侧边栏，辅助article，作为解释说明作用
+	</aside>
+	4、<nav>导航链接组，传统导航条，翻页导航，主导航，子导航</nav>
+	5、<time datetime="2017-4-22T10:07">2017-4-22T10:07</time>
+	<!--  datetime自定义日期时间 -->
+
+非主体元素：
+		非主体元素：
+	1、<header>用来做页面的标题，或某个区块的标题</header>
+	2、<footer>用来做页面的脚注内容
+		3、<address>
+			地址、作者姓名、联系电话、邮箱地址等
+		</address>
+	</footer>
+	4、<hgroup>将2个及以上的标题进行分组</hgroup>
+	5、<main>页面主体</main>
+
+main只能使用一次，header和footer能使用多次
+
+
+
+
+
+

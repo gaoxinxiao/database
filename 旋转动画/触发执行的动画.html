@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding:0;}
+ 	.box{
+ 		width: 200px;
+ 		height: 200px;
+ 		background: red;
+ 		transition:  4s  ; 复合属性
+ 		transition-property:all;  要过渡的属性
+ 		transition-duration:4s;  过渡的时间
+ 	/*	transition-delay:3s;*/ 过渡动画的延迟时间
+ 		transition-timing-function:ease;   过渡动画的类型
+ 		line-height: 200px;
+
+
+ 	}
+ 	.box:hover{
+ 		border-radius: 50%;
+ 		background: yellow;
+ 		width: 300px;
+ 		height: 300px;
+ 		font-size:60px;
+ 		line-height: 300px;
+ 		transform: rotate(3600deg);
+
+ 	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		哈哈哈
+	</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        *{margin:0;padding:0;}
+        .box{
+            width: 290px;
+            height: 286px;
+            border:1px solid red;
+            position: relative;
+        }
+       .banner{
+            width: 290px;
+            height: 286px;
+            background: #666;
+             position: absolute;
+             top: 0px;
+             left:0px;
+        }
+       .banner img{
+            position: absolute;
+            top: 0px;
+            left:0px;
+            transition: all 2s ease 500ms;
+
+         }
+         .banner:hover img{
+            transform:rotateY(90deg);
+            z-index:88;
+         }
+         .opcity{
+            width: 290px;
+            height: 286px;
+            text-align: center;
+            line-height: 286px;
+            background: rgba(0,0,0,0.5);
+            transition: all 1s ease 500ms;
+            color: #fff;
+
+            transform-style:preserve-3d;
+            transform:perspective(800px) rotateY(90deg);
+
+         }
+         .box:hover .opcity{
+            transform:rotateY(0deg);
+         }
+         .box1{
+            width: 290px;
+            height: 286px;
+            border:1px solid red;
+            margin-top:50px;
+            position: relative;
+        }
+        .box2{
+            width: 290px;
+            height: 286px;
+            position: absolute;
+            top: 0px;
+            left:0px;
+            transition: all 5s ease 500ms;
+        }
+        .box1:hover .box2{
+              background: rgba(0,0,0,0.6);
+            transform:rotateY(-180deg);
+        }
+        .box3{
+            width: 290px;
+            height: 286px;
+            color: #fff;
+            line-height: 286px;
+            text-align: center;
+            color: #fff;
+            transition: all 3s ease 500ms;
+
+        }
+        .box1:hover .box3{
+            transform:translateY(-286px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="banner">
+            <img src="images/banner2.png" alt="">
+        </div>
+        <div class="opcity">
+            ssssssssssssssssssss
+        </div>
+    </div>
+    <div class="box1">
+        <img src="images/banner2.png" alt="">
+        <div class="box2">
+
+        </div>
+          <div class="box3">
+                sssssssssssssssssss
+            </div>
+    </div>
+</body>
+</html>
